@@ -1,0 +1,177 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.authenticatorapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:5:5-67
+11-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:6:5-64
+12-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:6:22-62
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:7:5-79
+13-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:7:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:8:5-80
+14-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\ca5e361cd1ac9b0c5edeca1dae50bebc\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:10:5-79
+15-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\ca5e361cd1ac9b0c5edeca1dae50bebc\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:10:22-76
+16
+17    <application
+17-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:10:5-46:19
+18        android:allowBackup="true"
+18-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:11:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.0.1] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\baab1d635d6299aaa7cd48a6c4ae1902\core-1.0.1\AndroidManifest.xml:22:18-86
+20        android:icon="@mipmap/ic_launcher"
+20-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:12:9-43
+21        android:label="@string/app_name"
+21-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:13:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:14:9-54
+23        android:supportsRtl="true"
+23-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:15:9-35
+24        android:testOnly="true"
+25        android:theme="@style/AppTheme" >
+25-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:16:9-40
+26        <activity android:name="com.example.authenticatorapp.UploadImage" />
+26-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:17:9-58
+26-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:17:19-46
+27        <activity android:name="com.example.authenticatorapp.Login" />
+27-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:18:9-43
+27-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:18:19-40
+28        <activity android:name="com.example.authenticatorapp.Register" >
+28-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:19:9-25:20
+28-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:19:19-43
+29            <intent-filter>
+29-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:20:13-24:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:21:17-69
+30-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:21:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:23:17-77
+32-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:23:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity android:name="com.example.authenticatorapp.MainActivity" >
+35-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:26:9-32:20
+35-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:26:19-47
+36            <intent-filter>
+36-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:20:13-24:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:21:17-69
+37-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:21:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:23:17-77
+39-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:23:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <provider
+43-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:34:9-42:20
+44            android:name="androidx.core.content.FileProvider"
+44-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:35:13-62
+45            android:authorities="com.example.android.fileprovider"
+45-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:36:13-67
+46            android:exported="false"
+46-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:37:13-37
+47            android:grantUriPermissions="true" >
+47-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:38:13-47
+48            <meta-data
+48-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:39:13-41:64
+49                android:name="android.support.FILE_PROVIDER_PATHS"
+49-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:40:17-67
+50                android:resource="@xml/file_paths" />
+50-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:41:17-51
+51        </provider>
+52
+53        <meta-data
+53-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:43:9-45:57
+54            android:name="preloaded_fonts"
+54-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:44:13-43
+55            android:resource="@array/preloaded_fonts" />
+55-->E:\AuthenticatorApp\app\src\main\AndroidManifest.xml:45:13-54
+56
+57        <activity
+57-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
+58            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+58-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
+59            android:excludeFromRecents="true"
+59-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
+60            android:exported="true"
+60-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
+61            android:launchMode="singleTask"
+61-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
+62            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+62-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
+63            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+63-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
+64
+65        <service
+65-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
+66            android:name="com.google.firebase.components.ComponentDiscoveryService"
+66-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
+67            android:directBootAware="true"
+67-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+68            android:exported="false" >
+68-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
+69            <meta-data
+69-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
+70                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+70-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\46ac90c246f4c0a7f7bb247c07b4dd8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\ca5e361cd1ac9b0c5edeca1dae50bebc\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:15:13-17:85
+73                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+73-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\ca5e361cd1ac9b0c5edeca1dae50bebc\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:16:17-111
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\ca5e361cd1ac9b0c5edeca1dae50bebc\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:17:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\8ad4e1ffea3e5c78db0912db37bdac9c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+76                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+76-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\8ad4e1ffea3e5c78db0912db37bdac9c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\8ad4e1ffea3e5c78db0912db37bdac9c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+78        </service>
+79
+80        <activity
+80-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\38b6c4b545e39be84f8fef63d737cf6b\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+81            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+81-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\38b6c4b545e39be84f8fef63d737cf6b\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+82            android:exported="false"
+82-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\38b6c4b545e39be84f8fef63d737cf6b\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+83            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+83-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\38b6c4b545e39be84f8fef63d737cf6b\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+84
+85        <provider
+85-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+86            android:name="com.google.firebase.provider.FirebaseInitProvider"
+86-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+87            android:authorities="com.example.authenticatorapp.firebaseinitprovider"
+87-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+88            android:exported="false"
+88-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+89            android:initOrder="100" />
+89-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+90
+91        <meta-data
+91-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\f720b24cc490c109d50c0a0a1e6bf186\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+92            android:name="com.google.android.gms.version"
+92-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\f720b24cc490c109d50c0a0a1e6bf186\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+93            android:value="@integer/google_play_services_version" />
+93-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Nikhil Grover\.gradle\caches\transforms-2\files-2.1\f720b24cc490c109d50c0a0a1e6bf186\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+94    </application>
+95
+96</manifest>

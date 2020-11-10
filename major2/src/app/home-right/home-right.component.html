@@ -1,0 +1,101 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="../../assets/images/icons8-tree-64.png">
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+    <div class="mt-3">
+        <div
+          id="mainDisplay"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+          data-interval="3000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h1
+                style="font-weight: bolder;font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+              >
+              Need a "Token of Appreciation"?
+              </h1>
+            </div>
+            <div class="carousel-item">
+              <h1
+                style="font-weight: bolder;font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+              >
+              A ceremony approaching?!
+              </h1>
+            </div>
+            <div class="carousel-item">
+              <h1
+                style="font-weight: bolder;font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+              >
+              Help your planet?
+              </h1>
+            </div>
+          </div>
+        </div>
+        <h5>We have got you covered,Issue anytime!!</h5>
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="mt-4">
+                    <strong
+                      style="font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: rgb(59, 194, 165);"
+                      >LOGIN</strong
+                    >
+                  </h1>
+                  <form [formGroup]="loginform" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" style="padding-top: 1px;">Username</label>
+                      <input
+                        type="text"
+                        formControlName="username"
+                        class="form-control"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter your Email"
+                        [ngClass]="{ 'is-invalid':f.username.touched && f.username.errors }"
+                      />
+                      <div *ngIf="f.username.touched && f.username.errors" class="invalid-feedback">
+                        <div *ngIf="f.username.errors.required">*UserName is required</div>
+                        <div *ngIf="f.username.errors.email">*email should be a valid </div>
+                      </div>
+                      <small id="emailHelp" class="form-text text-muted"
+                        >We'll never share your information with anyone else.
+                      </small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1" style="padding-top: 1px;"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        formControlName="password"
+                        class="form-control"
+                        placeholder="password"
+                        [ngClass]="{ 'is-invalid':f.password.touched  &&  f.password.errors }"
+                      />
+                      <div *ngIf="f.password.touched  &&  f.password.errors" class="invalid-feedback">
+                        <div *ngIf="f.password.errors.required">
+                          *password is required
+                        </div>
+                        <div *ngIf="f.password.errors.minlength">
+                          *password length should be 8
+                        </div>
+                        <div *ngIf="f.password.errors.pattern">
+                          *password should conatin one number
+                        </div>
+                      </div>
+                    </div>
+                    <div *ngIf="error" style="color: red;">{{ error }}</div>
+                    <button type="submit" class="btn ">LOGIN</button>
+                  </form>
+            </div>
+            <div class="col-lg-6"></div>
+        </div>
+        <h5 class="pt-3">Access Everywhere,Anywhere around the world.</h5>
+        <h5 class=" ">
+          Spreading Greens <img src="../../assets/images/tree.svg" style="height: 30px;"/> .
+        </h5>
+      </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="container mt-3">
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">S. No.</th>
+                <th scope="col">Name & Details</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let policy of issuedData;let i = index">
+                <td>{{i+1}}</td>
+                <td>
+                    <div class="card mb-3" style="max-width: 600px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img [src]= "policy.address" class="card-img" alt="..." style="orientation: portrait;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="text-transform: capitalize;">{{policy.Name}}</h5>
+                                    <p class="card-text" style="text-transform: capitalize;">City : {{policy.City}}<br> Latitude : {{policy.Latitude}}<br>Longitude : {{policy.Longitude}}<br>Name of Reciepient : {{policy.issuedTo}} <br> Date Issued : {{policy.issueDate.toDate() | date: 'fullDate'}}</p>
+                                    <p class="card-text"><small class="text-muted">Id : {{policy.id}}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <button type="button" class="btn " (click)="moveBack(policy)">Move Back</button><br>
+                    <button type="button" class="btn " (click)="openCertificate(policy)">View Certificate</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

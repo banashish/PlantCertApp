@@ -1,0 +1,30 @@
+<div class="px-3" style="background-color: rgb(226, 255, 182);">
+    <div class="row">
+        <div class="col-sm-2 pt-2">
+            <img class="pl-5" src="../../assets/images/icons8-tree-64.png" style="height: 50px;">
+        </div>
+        <div class="col-sm-5 pt-3">
+            <ul #mynav class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                  <a data-toggle = "tab" class="nav-link" [routerLink] = "['/main']">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a data-toggle = "tab" class="nav-link" [routerLink] = "['issuedCerificate']">Issued Certificate</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-3 pt-2">
+            <div class="row p-1" style="background-color: white; opacity: 65%;border: solid darkgreen 2px;line-height: 0px;">
+                <div class="col-sm-2">
+                    <img  src="../../assets/images/user (1).svg">
+                </div>
+                <div class="col-sm-10 pt-3">
+                    <p style="font-weight: 600;">{{username}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 pt-2">
+            <button type="button" class="btn " (click)="onlogout()">logout</button>
+        </div>
+    </div>    
+</div>

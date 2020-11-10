@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Find my Tree</string>
+    <string name="login_activity_title">Login</string>
+    <string name="register_activity_title">Create New Account</string>
+    <string name="Upload_activity_title">Upload</string>
+    <string name="Main_activity_title">Your Profile</string>
+    <string name="Update_activity_title">Update</string>
+    <string name="ListView_activity_title">"Issued Plants"</string>
+    <string name="Splash_activity_title">"Find my Tree"</string>
+</resources>

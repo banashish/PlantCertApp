@@ -1,0 +1,36 @@
+.btn {
+    border-radius: 0px;
+    color: white;
+    background-color: rgb(59, 194, 165);
+    font-weight: 400;
+    padding: 5px 15px;
+    margin-top: 4px;
+  }
+
+.form-control:focus {
+    border-color: rgb(59, 194, 165);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgb(59, 194, 165);;
+}
+
+::ng-deep .cdk-overlay-container{
+  z-index: 1200 !important;
+
+}
+
+::ng-deep .mat-datepicker-content-touch .mat-calendar{
+  width: 26vh;
+}
+
+::ng-deep .mat-datepicker-content-touch .mat-calendar {
+  width: 25vh !important;
+  height: 25vh !important;
+}
+
+::ng-deep .mat-form-field-underline {
+  /*change color of underline*/
+  display: block;
+  background-color: green !important;
+} 
+.mat-input-underline{
+  display: block;
+}
